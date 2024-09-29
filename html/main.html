@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sandbox Game</title>
+    <style>
+        body {
+            background-color: black; /* Set background to black */
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: black; /* Set canvas background to black */
+            border: 1px solid #333; /* Optional dark border for canvas */
+        }
+        #toolbar {
+            text-align: center;
+            margin-top: 10px; /* Move toolbar below canvas */
+        }
+        button {
+            color: white;
+            background-color: #333;
+            border: 1px solid white;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Canvas for the game -->
+    <canvas id="sandboxCanvas" width="1000" height="600"></canvas>
+
+    <!-- Toolbar for selecting elements (moved below the canvas) -->
+    <div id="toolbar">
+        <button onclick="selectElement('sand')">Sand</button>
+        <button onclick="selectElement('water')">Water</button>
+        <button onclick="selectElement('fire')">Fire</button> <!-- Added fire button -->
+        <button onclick="clearCanvas()">Clear</button>
+    </div>
+
+    <script src="../js/elements.js"></script>
+    <script src="../js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+.controls {
+    margin-top: 10px;
+}
